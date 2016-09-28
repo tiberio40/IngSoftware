@@ -1,0 +1,45 @@
+﻿@model IEnumerable<IngSoftware.Models.Profesor>
+
+@{
+    ViewBag.Title = "Profesor";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Introducir un nuevo Profesor, "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroTelefonico)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellidos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroTelefonico)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID_Profesor }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.ID_Profesor }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_Profesor })
+        </td>
+    </tr>
+}
+
+</table>

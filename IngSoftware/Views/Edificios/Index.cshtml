@@ -1,0 +1,33 @@
+﻿@model IEnumerable<IngSoftware.Models.Edificio>
+
+@{
+    ViewBag.Title = "Lista Edificios";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Introducir un nuevo Edificio", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID_Edificio }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.ID_Edificio }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_Edificio })
+        </td>
+    </tr>
+}
+
+</table>
