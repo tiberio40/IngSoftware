@@ -11,7 +11,7 @@ namespace IngSoftware.Models
         [Key]
         public int ID_Edificio { get; set; }
 
-        [Display(Name = "Nombre del edificio a probar")]
+        [Display(Name = "Nombre del edificio a probar y mas")]
         [Required(ErrorMessage = "Debes ingresar un {0}")]
         [StringLength(30, ErrorMessage = "El campo {0} debe estar entre {2} y {1} carácteres", MinimumLength = 3)]
         public string Nombre { get; set; }
