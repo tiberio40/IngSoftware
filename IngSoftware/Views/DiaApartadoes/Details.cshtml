@@ -1,0 +1,50 @@
+﻿@model IngSoftware.Models.DiaApartado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DiaApartado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Peticion.Tema)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peticion.Tema)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Apartado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Apartado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora_Comienzo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora_Comienzo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora_Terminado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora_Terminado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_DiaApartado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

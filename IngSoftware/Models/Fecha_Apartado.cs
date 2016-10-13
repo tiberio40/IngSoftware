@@ -37,6 +37,6 @@ namespace IngSoftware.Models
         [Display(Name = "Nombre del Profesor")]
         public int ID_Profesor { get; set; }
 
-        public virtual Profesor Profesor { get; set; }
+
     }
 }

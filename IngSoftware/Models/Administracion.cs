@@ -6,17 +6,17 @@ using System.Web;
 
 namespace IngSoftware.Models
 {
-    public class Profesor
+    public class Administracion
     {
         [Key]
-        public int ID_Profesor { get; set; }
+        public int ID_Administracion { get; set; }
 
-        [Display(Name = "Nombre del Profesor")]
+        [Display(Name = "Nombres")]
         [Required(ErrorMessage = "Debes ingresar un {0}")]
         [StringLength(30, ErrorMessage = "El campo {0} debe estar entre {2} y {1} carácteres", MinimumLength = 3)]
         public string Nombres { get; set; }
 
-        [Display(Name = "Apellidos del Profesor")]
+        [Display(Name = "Apellidos")]
         [Required(ErrorMessage = "Debes ingresar un {0}")]
         [StringLength(30, ErrorMessage = "El campo {0} debe estar entre {2} y {1} carácteres", MinimumLength = 3)]
         public string Apellidos { get; set; }
@@ -26,6 +26,10 @@ namespace IngSoftware.Models
         public string NumeroTelefonico { get; set; }
 
         public string Email { get; set; }
+
+        public string Cargo { get; set; }
+
+        public string Privilegio { get; set; }
 
         public virtual ICollection<Peticion> Peticion { get; set; }
     }

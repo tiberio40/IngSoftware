@@ -22,8 +22,11 @@ namespace IngSoftware.Models
         public int ID_Edificio { get; set; }
         public virtual Edificio Edificio { get; set; }
 
+        public virtual ICollection<Peticion> Peticion { get; set; }
+
         public virtual ICollection<Equipo> Equipo { get; set; }
 
-        public virtual ICollection<Fecha_Apartado> Fecha_Apartado { get; set; }
+        public virtual ICollection<Inventario> Inventario { get; set; }
+
     }
 }

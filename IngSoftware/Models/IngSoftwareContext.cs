@@ -28,5 +28,13 @@ namespace IngSoftware.Models
         public System.Data.Entity.DbSet<IngSoftware.Models.Equipo> Equipoes { get; set; }
 
         public System.Data.Entity.DbSet<IngSoftware.Models.Fecha_Apartado> Fecha_Apartado { get; set; }
+
+        public System.Data.Entity.DbSet<IngSoftware.Models.Inventario> Inventarios { get; set; }
+
+        public System.Data.Entity.DbSet<IngSoftware.Models.Peticion> Peticions { get; set; }
+
+        public System.Data.Entity.DbSet<IngSoftware.Models.Respuesta> Respuestas { get; set; }
+
+        public System.Data.Entity.DbSet<IngSoftware.Models.DiaApartado> DiaApartadoes { get; set; }
     }
 }

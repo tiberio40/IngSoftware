@@ -1,0 +1,51 @@
+﻿@model IEnumerable<IngSoftware.Models.DiaApartado>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Peticion.Tema)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Apartado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hora_Comienzo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hora_Terminado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peticion.Tema)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_Apartado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hora_Comienzo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hora_Terminado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_DiaApartado }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_DiaApartado }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_DiaApartado })
+        </td>
+    </tr>
+}
+
+</table>
