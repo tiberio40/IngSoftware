@@ -31,5 +31,8 @@ namespace IngSoftware.Models
         public virtual Carrera Carrera { get; set; }
 
         public virtual ICollection<Peticion> Peticion { get; set; }
+
+        public virtual Materia Materia { get; set; }
+
     }
 }

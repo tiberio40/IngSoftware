@@ -28,5 +28,7 @@ namespace IngSoftware.Models
         public string Email { get; set; }
 
         public virtual ICollection<Peticion> Peticion { get; set; }
+
+        public virtual ICollection<Materia> Materia { get; set; }
     }
 }

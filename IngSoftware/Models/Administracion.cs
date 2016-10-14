@@ -32,5 +32,7 @@ namespace IngSoftware.Models
         public string Privilegio { get; set; }
 
         public virtual ICollection<Peticion> Peticion { get; set; }
+
+        public virtual ICollection<Facultad> Facultad { get; set; }
     }
 }

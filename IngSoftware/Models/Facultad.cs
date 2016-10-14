@@ -18,6 +18,8 @@ namespace IngSoftware.Models
 
         public virtual ICollection<Carrera> Carrera { get; set; }
 
+        public virtual ICollection<Administracion> Administracion { get; set; }
+
 
     }
 }

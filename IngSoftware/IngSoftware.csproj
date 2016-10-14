@@ -203,7 +203,9 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\IngSoftwareContext.cs" />
     <Compile Include="Models\Inventario.cs" />
+    <Compile Include="Models\keyAttribute.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Materia.cs" />
     <Compile Include="Models\Peticion.cs" />
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Models\Respuesta.cs" />
